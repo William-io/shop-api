@@ -50,11 +50,9 @@ namespace Shop.Controllers
             catch (Exception)
             {
                 return BadRequest(new { message = "Não foi possível criar a categoria" });
-
             }
-
         }
-
+        
         [HttpPut]
         [Route("{id:int}")]
         public async Task<ActionResult<List<Category>>> Put(
